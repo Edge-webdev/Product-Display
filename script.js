@@ -1,4 +1,11 @@
 const productList = document.querySelector('ul');
+const searchBar = document.querySelector('.search-bar');
+
+var listItems = [];
+
+searchBar.addEventListener('input', (e) => filterProducts(e.target.value));
+
+fetchProducts();
 
 async function fetchProducts() {
   const res = await fetch(
@@ -8,6 +15,9 @@ async function fetchProducts() {
 
   products.forEach((product) => {
     const listItem = document.createElement('li');
+
+    listItems.push(listItem);
+
     listItem.innerHTML = `
             <img
             src="https://i.stack.imgur.com/y9DpT.jpg"
@@ -21,4 +31,12 @@ async function fetchProducts() {
   });
 }
 
-fetchProducts();
+function filterProducts(searchTerm) {
+  listItems.forEach((elem) => {
+    if (elem.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+      elem.classList.remove('hide');
+    } else {
+      elem.classList.add('hide');
+    }
+  });
+}
