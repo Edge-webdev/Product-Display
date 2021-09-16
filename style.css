@@ -32,6 +32,10 @@ li h4 {
   margin-left: 10px;
 }
 
+li p {
+  font-size: 14px;
+}
+
 .search-bar {
   resize: none;
   height: 2vh;
