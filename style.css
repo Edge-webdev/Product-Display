@@ -9,18 +9,27 @@ body {
   justify-content: center;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
-  margin: 10px;
+  margin: 10px 5px;
 }
 
 .container {
   width: 100vw;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 2%;
+}
+
 ul {
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
+  justify-content: flex-start;
   width: 100%;
+  margin-left: 1.2vw;
   list-style: none;
   padding: 0;
 }
@@ -54,6 +63,7 @@ li p {
   background-color: #ededed;
   font-family: 'Roboto', sans-serif;
   padding: 10px 15px;
+  overflow: hidden;
 }
 
 .search-bar:focus {
@@ -63,4 +73,59 @@ li p {
 .product-image {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    text-align: center;
+  }
+
+  .search-bar {
+    width: 80vw;
+    margin-left: 3.5%;
+  }
+
+  ul {
+    margin-left: 2vw;
+  }
+
+  ul li {
+    width: 45%;
+    margin: 5px;
+  }
+  li p,
+  li h4 {
+    margin: 15px 25px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .title {
+    text-align: center;
+  }
+
+  .search-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+  }
+
+  ul li {
+    width: 30.5%;
+    margin: 5px;
+  }
+  li p,
+  li h4 {
+    margin: 15px 20px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  header {
+    margin-left: 7.5%;
+  }
+  ul li {
+    width: 22vw;
+  }
 }
