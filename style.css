@@ -104,7 +104,7 @@ li p {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1000px) {
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
   .title {
     text-align: center;
   }
@@ -117,7 +117,7 @@ li p {
   }
 
   ul li {
-    width: 30.8%;
+    width: 29.9%;
     margin: 5px;
   }
   li p,
@@ -126,11 +126,12 @@ li p {
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+@media only screen and (min-width: 1050px) and (max-width: 1600px) {
   header {
-    margin-left: 7.5%;
+    margin-left: 2%;
   }
+
   ul li {
-    width: 22.4%;
+    width: 17.9%;
   }
 }
