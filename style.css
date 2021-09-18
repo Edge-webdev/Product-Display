@@ -10,6 +10,8 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   margin: 10px 5px;
+  background-color: #2b4eff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -21,6 +23,7 @@ header {
   justify-content: center;
   flex-direction: column;
   margin-left: 2%;
+  color: white;
 }
 
 ul {
@@ -38,6 +41,7 @@ ul li {
   width: 15%;
   border: 2px solid black;
   margin: 10px;
+  background-color: white;
 }
 
 .hide {
@@ -60,7 +64,8 @@ li p {
   border-radius: 20px;
   font-size: 15px;
   width: 20%;
-  background-color: #ededed;
+  background-color: #1a2e96;
+  color: white;
   font-family: 'Roboto', sans-serif;
   padding: 10px 15px;
   overflow: hidden;
@@ -112,7 +117,7 @@ li p {
   }
 
   ul li {
-    width: 30.5%;
+    width: 30.8%;
     margin: 5px;
   }
   li p,
@@ -126,6 +131,6 @@ li p {
     margin-left: 7.5%;
   }
   ul li {
-    width: 22vw;
+    width: 22.4%;
   }
 }
